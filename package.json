@@ -1,0 +1,19 @@
+{
+  "name": "tomcat-mcp",
+  "version": "1.0.0",
+  "description": "A local Tomcat management MCP server for Kiro IDE",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "kiro",
+    "tomcat",
+    "devops",
+    "sre",
+    "java"
+  ],
+  "author": "Sarath(Dexter)",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
