@@ -42,7 +42,7 @@ https://registry.modelcontextprotocol.io/v0.1/servers?search=tomcat
 
 
 
-\[!\[Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=Tomcat%20MCP&config=%7B%22command%22%3A%22node%22%2C%22args%22%3A%5B%22index.js%22%5D%2C%22disabled%22%3Afalse%2C%22autoApprove%22%3A%5B%22start_tomcat%22%2C%22stop_tomcat%22%2C%22check_tomcat_status%22%2C%22read_latest_catalina_log%22%2C%22diagnose_startup_failure%22%2C%22deploy_war%22%2C%22rollback_last_deployment%22%2C%22thread_dump%22%2C%22heap_dump%22%2C%22analyze_gc_log%22%2C%22detect_tomcat_service%22%5D%7D)
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=Tomcat%20MCP&config=%7B%22command%22%3A%22node%22%2C%22args%22%3A%5B%22index.js%22%5D%2C%22disabled%22%3Afalse%2C%22autoApprove%22%3A%5B%22start_tomcat%22%2C%22stop_tomcat%22%2C%22check_tomcat_status%22%2C%22read_latest_catalina_log%22%2C%22diagnose_startup_failure%22%2C%22deploy_war%22%2C%22rollback_last_deployment%22%2C%22thread_dump%22%2C%22heap_dump%22%2C%22analyze_gc_log%22%2C%22detect_tomcat_service%22%5D%7D)
 
 
 
@@ -50,7 +50,7 @@ https://registry.modelcontextprotocol.io/v0.1/servers?search=tomcat
 
 
 
-\## 📦 Requirements
+## 📦 Requirements
 
 
 
