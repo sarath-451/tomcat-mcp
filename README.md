@@ -1,38 +1,40 @@
-\# Tomcat MCP (Model Context Protocol Server)
+# Tomcat MCP (Model Context Protocol Server)
 
+[![npm version](https://img.shields.io/npm/v/@sarath-451/tomcat-mcp)](https://www.npmjs.com/package/@sarath-451/tomcat-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
 
-
-A local \*\*Tomcat management MCP server\*\* for \*\*Kiro IDE\*\* that enables AI-assisted
-
+A local **Tomcat management MCP server** for **Kiro IDE** that enables AI-assisted
 operations such as:
 
+- Start / stop Tomcat
+- Diagnose startup failures
+- Deploy and rollback WAR files
+- Read and analyze logs
+- Take thread dumps and heap dumps
+- Analyze GC logs
+- Detect Windows service installations
 
+This MCP runs **locally** and never exposes Tomcat over the network.
 
-\- Start / stop Tomcat
+---
 
-\- Diagnose startup failures
+## 🌍 Available in MCP Registry
 
-\- Deploy and rollback WAR files
+Tomcat MCP is officially published to the **MCP Registry** and npm.
 
-\- Read and analyze logs
+**Registry name:**
+io.github.sarath-451/tomcat-mcp
 
-\- Take thread dumps and heap dumps
+**npm package:**
+@sarath-451/tomcat-mcp
 
-\- Analyze GC logs
-
-\- Detect Windows service installations
-
-
-
-This MCP runs \*\*locally\*\* and never exposes Tomcat over the network.
-
-
+Search via Registry API:
+https://registry.modelcontextprotocol.io/v0.1/servers?search=tomcat
 
 ---
 
 
-
-\## 🚀 One-Click Install (Kiro IDE)
+## 🚀 One-Click Install (Kiro IDE)
 
 
 
