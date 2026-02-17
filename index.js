@@ -47,13 +47,48 @@ function classifyTomcatError(logText) {
 
 const tools = {
   start_tomcat: async () => {
-    exec(`"${config.BIN_DIR}\\startup.bat"`);
-    return "Tomcat startup triggered";
+  return new Promise((resolve) => {
+    exec(
+      `cmd /c "${config.BIN_DIR}\\startup.bat" >> "${config.LOG_DIR}\\catalina-combined.log" 2>&1`,
+      {
+        cwd: config.TOMCAT_HOME,
+        env: {
+          ...process.env,
+          JAVA_HOME: config.JAVA_HOME,
+          CATALINA_HOME: config.TOMCAT_HOME
+        }
+      },
+      (err) => {
+        if (err) {
+          return resolve("Tomcat startup failed.");
+        }
+        resolve("Tomcat started with combined logging.");
+      }
+    );
+  });
   },
 
   stop_tomcat: async () => {
-    exec(`"${config.BIN_DIR}\\shutdown.bat"`);
-    return "Tomcat shutdown triggered";
+    return new Promise((resolve) => {
+      exec(
+        `jcmd | findstr /i "org.apache.catalina.startup.Bootstrap"`,
+        (err, stdout) => {
+          if (!stdout) {
+            return resolve("Tomcat process not found.");
+          }
+  
+          const pid = stdout.trim().split(/\s+/)[0];
+  
+          exec(`taskkill /PID ${pid} /F`, (killErr) => {
+            if (killErr) {
+              return resolve("Failed to kill Tomcat process.");
+            }
+  
+            resolve(`Tomcat process ${pid} terminated successfully.`);
+          });
+        }
+      );
+    });
   },
 
   check_tomcat_status: async () => {
