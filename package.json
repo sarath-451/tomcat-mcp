@@ -1,6 +1,6 @@
 {
   "name": "@sarath-451/tomcat-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Local MCP server for AI-assisted Apache Tomcat management in Kiro IDE",
   "type": "module",
   "main": "index.js",
@@ -12,7 +12,7 @@
 
   "license": "MIT",
 
-  "mcpName": "io.github.sarath-451/tomcat",
+  "mcpName": "io.github.sarath-451/tomcat-mcp",
 
   "keywords": [
     "mcp",
